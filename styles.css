@@ -1,0 +1,195 @@
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+  --Darkblue: hsl(212, 21%, 14%);
+}
+
+body {
+  background-color: var(--Cream);
+  justify-content: center; /* Horizontally center the body */
+  align-items: center; /* Vertically center the body */
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center the body */
+  align-items: center; /* Vertically center the body */
+  margin: 10vh auto;
+  max-width: 80%;
+}
+
+#context {
+  flex-grow: 1; /* Allow the section to grow and take up remaining space */
+  justify-content: center; /* Horizontally center the body */
+  align-items: center; /* Vertically center the body */
+  background-color: var(--White);
+  border-radius: 0 10px 10px 0;
+  padding: 8px; /* Add some padding to the section for spacing */
+  max-width: 23%;
+ 
+}
+
+#img {
+  max-width: 25%; /* Adjust the image width to occupy 50% of the container */
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+#perfume {
+  color: var(--Darkblue);
+  font-family: "Montserrat", sans-serif;
+  justify-content: center; /* Horizontally center the body */
+  align-items: center; /* Vertically center the body */
+  font-size: 10px; /* Increase font size for better readability */
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+}
+
+#heading {
+  font-family: "Fraunces", sans-serif;
+  justify-content: center; /* Horizontally center the body */
+  align-items: center; /* Vertically center the body */
+  font-size: 26px; /* Increase font size for better readability */
+  margin: 2px 0px 0px 12px;
+}
+
+#paragraph {
+  color: var(--Darkblue);
+  font-size: 12px; /* Increase font size for better readability */
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  justify-content: center; /* Horizontally center the body */
+  align-items: center; /* Vertically center the body */
+  margin: 2px 0px 0px 12px;
+  padding: 2px;
+  line-height: 1.8;
+}
+
+.original-price {
+  color: var(--Darkcyan);
+  font-size: 22px; /* Increase font size for better visibility */
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 2px 0px 0px 12px;
+}
+
+#crossed-price {
+  text-decoration: line-through;
+  font-size: 14px; /* Increase font size for better visibility */
+  font-family: "Fraunces", serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.button {
+  /* Your existing button styles */
+  background-color: var(--Darkcyan);
+  color: #fff;
+  text-align: center;
+  margin: 10px 0px 22px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+  height: 35px;
+}
+
+.icon {
+  /* Add styles to position the icon */
+  margin-right: 10px; /* Adjust the margin as needed */
+  vertical-align: middle;
+}
+
+#footer {
+  text-align: center; /* Center-align the footer text */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  #context {
+    margin-top: -20px;
+    max-width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  #perfume {
+    font-size: 14px;
+  }
+
+  #heading {
+    font-size: 24px;
+  }
+
+  #paragraph {
+    font-size: 14px;
+  }
+
+  .original-price {
+    font-size: 24px;
+  }
+
+  #crossed-price {
+    font-size: 12px;
+  }
+
+  .button {
+    width: 150px;
+  }
+  #img {
+    max-width: 100%; /* Make the image occupy the full width on smaller screens */
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Adjust border radius for smaller screens */
+    margin-bottom: 20px; /* Add spacing between image and section */
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  #context {
+    max-width: 100%;
+  }
+
+  #perfume {
+    font-size: 14px;
+  }
+
+  #heading {
+    font-size: 24px;
+  }
+
+  #paragraph {
+    font-size: 14px;
+  }
+
+  .original-price {
+    font-size: 24px;
+  }
+
+  #crossed-price {
+    font-size: 12px;
+  }
+
+  .button {
+    width: 150px;
+  }
+  #img {
+    max-width: 100%; /* Make the image occupy the full width on smaller screens */
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Adjust border radius for smaller screens */
+    margin-bottom: 20px; /* Add spacing between image and section */
+  }
+}
